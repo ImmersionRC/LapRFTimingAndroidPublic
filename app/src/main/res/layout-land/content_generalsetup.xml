@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_setup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.immersionrc.LapRFTiming.SetupActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp"
+    tools:showIn="@layout/activity_generalsetup">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="End Race Behaviour"
+        app:layout_constraintLeft_toRightOf="@+id/spinnerRaceStartDelay"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerRaceStartDelay" />
+
+    <Spinner
+        android:id="@+id/spinnerEndRaceBehaviour"
+        android:layout_width="257dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="3dp"
+        android:entries="@array/end_race_behaviour_array"
+        app:layout_constraintLeft_toRightOf="@+id/spinnerStartTimeFrom"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textViewRaceTimeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/title_race_duration"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerNumLaps"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewRaceType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/title_race_type"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerStartTimeFrom"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNumLapsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/title_lap_count"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerRaceType"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewRaceStartDelay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-9dp"
+        android:text="@string/title_race_start_delay"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewStartTimeFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/title_start_time_from"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerRaceStartDelay"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerStartTimeFrom"
+        android:layout_width="257dp"
+        android:layout_height="24dp"
+        android:entries="@array/start_time_from_array"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStartTimeFrom"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerRaceStartDelay"
+        android:layout_width="257dp"
+        android:layout_height="24dp"
+        android:entries="@array/race_start_delay_array"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRaceStartDelay"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerRaceType"
+        android:layout_width="257dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="4dp"
+        android:entries="@array/race_type_array"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRaceType"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerRaceTime"
+        android:layout_width="257dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="4dp"
+        android:entries="@array/race_time_array"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRaceTimeTitle"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerNumLaps"
+        android:layout_width="257dp"
+        android:layout_height="24dp"
+        android:entries="@array/num_laps_array"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNumLapsTitle"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

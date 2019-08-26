@@ -1,0 +1,240 @@
+<resources>
+    <string name="app_name">LapRF</string>
+    <string name="ble_not_supported">BLE Not Supported</string>
+    <string name="ble_enabled">BLE Enabled</string>
+    <string name="ble_needed">Bluetooth is needed to connect to LapRF.</string>
+    <string name="location_needed">Location permission is needed to enable bluetooth and connect to LapRFon this device.</string>
+
+    <string-array name = "countdown_file_array">
+        <item>number_1</item>
+        <item>number_1</item>
+        <item>number_2</item>
+        <item>number_3</item>
+        <item>number_4</item>
+        <item>number_5</item>
+        <item>number_6</item>
+        <item>number_7</item>
+        <item>number_8</item>
+        <item>number_9</item>
+        <item>number_10</item>
+    </string-array>
+
+    <string-array name="power_preset_array">
+        <item>25mW</item>
+        <item>250mW</item>
+        <item>600mW</item>
+    </string-array>
+
+    <string-array name="race_start_delay_array">
+        <item>None</item>
+        <item>5 seconds</item>
+        <item>10 seconds</item>
+        <item>Random Less than 5</item>
+        <!-- <item>Staggered Start</item> -->
+    </string-array>
+
+    <string-array name="start_time_from_array">
+        <item>Start tone</item>
+        <item>First to gate</item>
+    </string-array>
+
+    <string-array name="end_race_behaviour_array">
+        <item>Stop at tone</item>
+        <item>Warn at tone</item>
+    </string-array>
+
+    <string-array name="race_type_array">
+        <item>Practice</item>
+        <item>Lap Count</item>
+        <item>Fixed Time</item>
+    </string-array>
+
+    <string-array name="random_welcome_phrases">
+        <item>goggles_down_thumbs_up</item>
+        <item>this_is_laprf_by_immersionrc</item>
+        <item>you_know_this_is_a_race_right</item>
+        <item>yeah_buddy</item>
+        <item>who_has_more_fun_than_us_nobody</item>
+    </string-array>
+
+<!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="num_laps_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="race_time_array">
+        <item>1 min</item>
+        <item>1 min 30s</item>
+        <item>2 mins</item>
+        <item>2 mins 30s</item>
+        <item>3 mins</item>
+        <item>3 mins 30s</item>
+        <item>4 mins</item>
+        <item>4 mins 30s</item>
+        <item>5 mins</item>
+        <item>5 mins 30s</item>
+        <item>6 mins</item>
+        <item>6 mins 30s</item>
+        <item>7 mins</item>
+        <item>7 mins 30s</item>
+        <item>8 mins</item>
+        <item>8 mins 30s</item>
+        <item>9 mins</item>
+        <item>9 mins 30s</item>
+        <item>10 mins</item>
+    </string-array>
+
+    <string-array name="min_lap_time_array">
+        <item>5 secs</item>
+        <item>10 secs</item>
+        <item>15 secs</item>
+        <item>20 secs</item>
+        <item>25 secs</item>
+        <item>30 secs</item>
+        <item>35 secs</item>
+        <item>40 secs</item>
+        <item>45 secs</item>
+        <item>50 secs</item>
+        <item>55 secs</item>
+        <item>1 minute</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="table_title_position">#</string>
+    <string name="table_title_lap1">Lap 1</string>
+    <string name="table_title_lap2">Lap 2</string>
+    <string name="table_title_lap3">Lap 3</string>
+    <string name="table_title_lap4">Lap 4</string>
+    <string name="table_title_lap5">Lap 5</string>
+    <string name="table_title_lap6">Lap 6</string>
+    <string name="table_title_lap7">Lap 7</string>
+    <string name="table_title_lap8">Lap 8</string>
+    <string name="table_title_total">Total</string>
+    <string name="table_title_best">Best</string>
+    <string name="table_title_avg">Avg</string>
+    <string name="table_title_laps">Lap</string>
+    <string name="button_start_race">Start\nRace</string>
+    <string name="button_stop_race">Stop\nRace</string>
+    <string name="button_read_settings">Read\nSettings</string>
+    <string name="button_write_settings">Write\nSettings</string>
+    <string name="button_defaults_race_25mw">Defaults\nRace 25mW</string>
+    <string name="button_defaults_25mw">25\nmW</string>
+    <string name="button_defaults_200mw">200\nmW</string>
+    <string name="button_defaults_600mw">600\nmW</string>
+    <string name="button_laps_left"><![CDATA[<<]]></string>
+    <string name="button_laps_right"><![CDATA[>>]]></string>
+    <string name="button_rename_puck">Rename\nPuck</string>
+    <string name="buttons_default_raceband">Race\nBand</string>
+    <string name="buttons_default_ircband">IRC\nBand</string>
+    <string name="title_activity_gate_setup">Gate Setup</string>
+    <string name="title_activity_setup">Setup Activity</string>
+    <string name="title_activity_race">LapRF</string>
+    <string name="title_activity_calibration">CalibrationActivity</string>
+    <string name="title_activity_calibration_wizard_activity">calibration_wizard_activity</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_generalsettings">General Settings</string>
+    <string name="title_activity_pilotsettings">Pilot Settings</string>
+    <string name="title_activity_select_frequency">Select Frequency</string>
+    <string name="title_tx_power">Tx Power</string>
+    <string name="title_race_start_delay">Race Start Delay</string>
+    <string name="title_start_time_from">Start Time From</string>
+    <string name="title_race_type">Race Type</string>
+    <string name="title_tx_channels">Preset Channels</string>
+    <string name="title_lap_count">Lap Count</string>
+    <string name="title_puck_name">Puck Name</string>
+    <string name="title_rename_puck">Change LapRF Name</string>
+    <string name="title_enter_new_name">Enter new name</string>
+    <string name="menu_select_device">Select Device</string>
+    <string name="menu_laprf_setup">LapRF Setup</string>
+    <string name="menu_general_settings">General Settings</string>
+    <string name="menu_pilot_settings">Pilot Settings</string>
+    <string name="menu_race_analysis">Race Analysis</string>
+    <string name="menu_diagnostics">Diagnostics</string>
+    <string name="title_detected_bluetooth_devices">Detected LapRF Bluetooth Devices</string>
+    <string name="title_if_not_detected">If your device is not listed, ensure another phone/tablet is not connected to it.</string>
+    <string name="button_rescan">Rescan</string>
+    <string name="button_connect">Connect</string>
+    <string name="title_race_duration">Race Duration</string>
+    <string name="title_race_clock_reference">Race Clock Reference</string>
+    <string name="min_lap_time_title">Min Lap Time</string>
+</resources>

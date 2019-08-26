@@ -1,0 +1,77 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <PreferenceScreen android:title="Pilot Names">
+        <PreferenceCategory android:title="Pilot Names">
+
+        </PreferenceCategory>
+        <EditTextPreference
+            android:defaultValue="Alice"
+            android:key="pilot_name_1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Pilot 1 Name" />
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="Bob"
+            android:key="pilot_name_2"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Pilot 2 Name" />
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="Charlie"
+            android:key="pilot_name_3"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Pilot 3 Name" />
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="David"
+            android:key="pilot_name_4"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Pilot 4 Name" />
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="Eve"
+            android:key="pilot_name_5"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Pilot 5 Name" />
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="Frank"
+            android:key="pilot_name_6"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Pilot 6 Name" />
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="Grace"
+            android:key="pilot_name_7"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Pilot 7 Name" />
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="Heidi"
+            android:key="pilot_name_8"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Pilot 8 Name" />
+    </PreferenceScreen>
+
+</PreferenceScreen>

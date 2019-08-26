@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/tvPilot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Pilot"
+    android:width="40sp" />
+    <TextView
+        android:id="@+id/tvLapnumber"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="LapNumber" />
+<TextView
+    android:id="@+id/tvLaptime"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    android:text="Laptime" />
+    <TextView
+        android:id="@+id/tvTimestamp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Laptime" />
+    <TextView
+        android:id="@+id/tvStrength"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="Strength" />
+</LinearLayout>

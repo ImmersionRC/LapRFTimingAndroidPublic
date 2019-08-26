@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <TextView
+        android:id="@+id/slot_item_pilotNameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:editable="false"
+        android:inputType="none"
+        android:text="Pilot"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/slot_item_toggleButton"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        android:text="ToggleButton"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/slot_item_pilotNameEditText"
+        app:layout_constraintLeft_toRightOf="@+id/slot_item_pilotNameEditText"
+        app:layout_constraintTop_toTopOf="@+id/slot_item_pilotNameEditText"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="115dp"
+        tools:layout_conversion_absoluteX="54dp"
+        tools:layout_conversion_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/slot_item_frequencyEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="0dp"
+        android:text="5000"
+        app:layout_constraintBottom_toBottomOf="@+id/slot_item_toggleButton"
+        app:layout_constraintLeft_toRightOf="@+id/slot_item_toggleButton"
+        app:layout_constraintTop_toTopOf="@+id/slot_item_toggleButton"
+        tools:layout_conversion_absoluteHeight="16dp"
+        tools:layout_conversion_absoluteWidth="59dp"
+        tools:layout_conversion_absoluteX="169dp"
+        tools:layout_conversion_absoluteY="15dp" />
+
+    <Spinner
+        android:id="@+id/slot_item_gainSpinner"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:spinnerMode="dialog"
+        tools:layout_conversion_absoluteHeight="24dp"
+        tools:layout_conversion_absoluteWidth="75dp"
+        tools:layout_conversion_absoluteX="228dp"
+        tools:layout_conversion_absoluteY="0dp"
+        app:layout_constraintLeft_toRightOf="@+id/slot_item_frequencyEditText"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintTop_toTopOf="@+id/slot_item_frequencyEditText"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/slot_item_frequencyEditText"
+        android:layout_marginBottom="0dp" />
+
+    <EditText
+        android:id="@+id/slot_item_thresholdEditText"
+        android:layout_width="312dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:text="450.0"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/slot_item_gainSpinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/slot_item_gainSpinner"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_conversion_absoluteHeight="42dp"
+        tools:layout_conversion_absoluteWidth="80dp"
+        tools:layout_conversion_absoluteX="303dp"
+        tools:layout_conversion_absoluteY="1dp" />
+
+
+</android.support.constraint.ConstraintLayout>

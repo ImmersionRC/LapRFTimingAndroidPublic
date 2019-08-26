@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <EditText
+        android:id="@+id/slot_item_pilotNameEditText"
+        android:layout_width="320dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        android:enabled="true"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:paddingBottom="6dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        android:singleLine="true"
+        android:text="Pilot Name"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toRightOf="@+id/slot_item_pilotIdEditText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/slot_item_pilotIdEditText"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="5dp"
+        android:inputType="none"
+        android:text="ID"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

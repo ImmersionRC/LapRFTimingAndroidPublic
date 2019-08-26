@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/slotIDText"
+        android:layout_width="30dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="6dp"
+        android:clickable="true"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="onClickSlotId"
+        android:text="ID"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/pilotNameText"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="6dp"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="6dp"
+        android:text="PilotName"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_results_rows_foreground"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/pilotPositionText"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="0dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textAlignment="center"
+        android:textColor="@color/color_results_rows_foreground"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/lap1Text"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="6dp"
+        android:layout_weight="0.08"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="4dp"
+        android:text="- - -"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_results_rows_foreground"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/lap2Text"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="6dp"
+        android:layout_weight="0.08"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="4dp"
+        android:text="- - -"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_results_rows_foreground"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/lap3Text"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="6dp"
+        android:layout_weight="0.08"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="4dp"
+        android:text="- - -"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_results_rows_foreground"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/lap4Text"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="6dp"
+        android:layout_weight="0.08"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="4dp"
+        android:text="- - -"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_results_rows_foreground"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/lap5Text"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="6dp"
+        android:layout_weight="0.08"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="4dp"
+        android:text="- - -"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_results_rows_foreground"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/lap6Text"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="6dp"
+        android:layout_weight="0.08"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="4dp"
+        android:text="- - -"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_results_rows_foreground"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/lap7Text"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="6dp"
+        android:layout_weight="0.08"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="4dp"
+        android:text="- - -"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_results_rows_foreground"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/lap8Text"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="6dp"
+        android:layout_weight="0.08"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="4dp"
+        android:text="- - -"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_results_rows_foreground"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/avgTextView"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="6dp"
+        android:layout_weight="0.08"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="4dp"
+        android:text="- - -"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_results_rows_foreground"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/bestTextView"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="6dp"
+        android:layout_weight="0.08"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="4dp"
+        android:text="- - -"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_results_rows_foreground"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/totalTextView"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="6dp"
+        android:layout_weight="0.08"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="4dp"
+        android:text="- - -"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_results_rows_foreground"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/lapsTextView"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="6dp"
+        android:layout_weight="0.08"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="4dp"
+        android:text="- - -"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_results_rows_foreground"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+
+</LinearLayout>

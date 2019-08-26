@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/slotIDText"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="6dp"
+        android:text="ID"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <ProgressBar
+        android:id="@+id/rssi_progress_bar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="498dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="0.84"
+        android:max="4096"
+        android:progress="2048"
+        app:layout_constraintTop_toBottomOf="@+id/slot_item_thresholdEditText"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <TextView
+        android:id="@+id/textViewRSSI"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="0.04"
+        android:text="- - -"
+        android:textSize="24sp" />
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#bf360c</color>
+    <color name="colorPrimaryDark">#852508</color>
+    <color name="colorAccent">#ffc400</color>
+    <color name="gray">#aaaaaa</color>
+    <color name="default_color">#FFFFFF</color>
+    <color name="blue">#0000ff</color>
+    <color name="transparent">#000000FF</color>
+    <color name="column_lap">#6d4c41</color>
+    <color name="column_odd">#4a1e00</color>
+    <color name="column_even">#5a310d</color>
+
+    <color name="column_ordering_lap">#6d4c41</color>
+    <color name="column_ordering_odd">#993d00</color>
+    <color name="column_ordering_even">#4d1f00</color>
+
+    <color name="column_total_lap">#6d4c41</color>
+    <color name="column_total_odd">#b34700</color>
+    <color name="column_total_even">#662900</color>
+
+    <color name="column_pilots_lap">#6d4c41</color>
+    <color name="column_pilots_odd">#15c9613e</color>
+    <color name="column_pilots_even">#823500</color>
+
+    <color name="column_lap_darker">#4e342e</color>
+    <color name="column_odd_darker">#4d1f00</color>
+    <color name="column_even_darker">#4d2a0a</color>
+
+    <color name="freq_adapter_selected">#bf360c</color>
+    <color name="freq_adapter_unselected">#fb8c00</color>
+    <color name="bluetooth_packet_state_1">#00FF00</color>
+    <color name="bluetooth_packet_state_2">#00DD00</color>
+    <color name="bluetooth_packet_timeout">#FF0000</color>
+    <color name="battery_warning">#fecc40</color>
+    <color name="battery_ok">#00ff00</color>
+    <color name="foreground_material_dark">#ffab40</color>
+    <color name="secondary_text_default_material_dark">#ffcc80</color>
+    <color name="best_total_laps_color">#237f23</color>
+    <color name="fastest_lap_color">#237f23</color>
+    <color name="color_results_title_background">#bf360c</color>
+    <color name="color_results_title_foreground">#ffffff</color>
+    <color name="color_results_rows_foreground">#e0e0e0</color>
+</resources>

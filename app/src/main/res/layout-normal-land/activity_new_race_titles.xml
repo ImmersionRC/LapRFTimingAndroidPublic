@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_results_title_background"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <TextView
+        android:id="@+id/slotIDText"
+        android:layout_width="23dp"
+        android:layout_height="25dp"
+        android:layout_weight="0.07"
+        android:background="@color/color_results_title_background"
+        android:fontFamily="sans-serif-condensed"
+        android:maxLines="1"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/color_results_title_foreground"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/pilotNameText"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:background="@color/color_results_title_background"
+        android:fontFamily="sans-serif-condensed"
+        android:maxLines="1"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_results_title_foreground"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp"
+        android:layout_weight="0.07" />
+
+    <TextView
+        android:id="@+id/pilotPositionText"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_weight="0.07"
+        android:background="@color/color_results_title_background"
+        android:fontFamily="sans-serif-condensed"
+        android:maxLines="1"
+        android:paddingLeft="3dp"
+        android:text="@string/table_title_position"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_results_title_foreground"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/lap1Text"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:background="@color/color_results_title_background"
+        android:fontFamily="sans-serif-condensed"
+        android:maxLines="1"
+        android:paddingLeft="3dp"
+        android:text="@string/table_title_lap1"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_results_title_foreground"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp"
+        android:layout_weight="0.07" />
+
+    <TextView
+        android:id="@+id/lap2Text"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:background="@color/color_results_title_background"
+        android:fontFamily="sans-serif-condensed"
+        android:maxLines="1"
+        android:paddingLeft="3dp"
+        android:text="@string/table_title_lap2"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_results_title_foreground"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp"
+        android:layout_weight="0.07" />
+
+    <TextView
+        android:id="@+id/lap3Text"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:background="@color/color_results_title_background"
+        android:fontFamily="sans-serif-condensed"
+        android:maxLines="1"
+        android:paddingLeft="3dp"
+        android:text="@string/table_title_lap3"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_results_title_foreground"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp"
+        android:layout_weight="0.07" />
+
+    <TextView
+        android:id="@+id/lap4Text"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:background="@color/color_results_title_background"
+        android:fontFamily="sans-serif-condensed"
+        android:maxLines="1"
+        android:paddingLeft="3dp"
+        android:text="@string/table_title_lap4"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_results_title_foreground"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp"
+        android:layout_weight="0.07" />
+
+
+    <TextView
+        android:id="@+id/lap5Text"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:background="@color/color_results_title_background"
+        android:fontFamily="sans-serif-condensed"
+        android:maxLines="1"
+        android:paddingLeft="3dp"
+        android:text="@string/table_title_lap5"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_results_title_foreground"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp"
+        android:layout_weight="0.07" />
+
+    <TextView
+        android:id="@+id/lap6Text"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:background="@color/color_results_title_background"
+        android:fontFamily="sans-serif-condensed"
+        android:maxLines="1"
+        android:paddingLeft="3dp"
+        android:text="@string/table_title_lap6"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_results_title_foreground"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp"
+        android:layout_weight="0.07" />
+
+    <TextView
+        android:id="@+id/lap7Text"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:background="@color/color_results_title_background"
+        android:fontFamily="sans-serif-condensed"
+        android:maxLines="1"
+        android:paddingLeft="3dp"
+        android:text="@string/table_title_lap7"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_results_title_foreground"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp"
+        android:layout_weight="0.07" />
+
+    <TextView
+        android:id="@+id/lap8Text"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:background="@color/color_results_title_background"
+        android:fontFamily="sans-serif-condensed"
+        android:maxLines="1"
+        android:paddingLeft="3dp"
+        android:text="@string/table_title_lap8"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_results_title_foreground"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp"
+        android:layout_weight="0.07" />
+
+    <TextView
+        android:id="@+id/avgTextView"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:background="@color/color_results_title_background"
+        android:fontFamily="sans-serif-condensed"
+        android:maxLines="1"
+        android:paddingLeft="3dp"
+        android:text="@string/table_title_avg"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_results_title_foreground"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp"
+        android:layout_weight="0.07" />
+
+    <TextView
+        android:id="@+id/bestTextView"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:background="@color/color_results_title_background"
+        android:fontFamily="sans-serif-condensed"
+        android:maxLines="1"
+        android:paddingLeft="3dp"
+        android:text="@string/table_title_best"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_results_title_foreground"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp"
+        android:layout_weight="0.07" />
+
+    <TextView
+        android:id="@+id/totalTextView"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:background="@color/color_results_title_background"
+        android:fontFamily="sans-serif-condensed"
+        android:maxLines="1"
+        android:paddingLeft="3dp"
+        android:text="@string/table_title_total"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_results_title_foreground"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp"
+        android:layout_weight="0.07" />
+
+    <TextView
+        android:id="@+id/lapsTextView"
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:background="@color/color_results_title_background"
+        android:fontFamily="sans-serif-condensed"
+        android:maxLines="1"
+        android:paddingLeft="1dp"
+        android:text="@string/table_title_laps"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_results_title_foreground"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="2dp"
+        android:layout_weight="0.07" />
+
+
+</LinearLayout>

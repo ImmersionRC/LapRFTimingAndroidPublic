@@ -1,0 +1,103 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.immersionrc.LapRFTiming.BluetoothConnectivityFragment">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <TextView
+            android:id="@+id/bluetoothFragmentBluetoothStatusTextBox"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/rounded_corner_edittext"
+            android:elevation="1dp"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingStart="3dp"
+            android:text="BLE"
+            android:textColor="?android:attr/colorBackground"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/bluetoothFragmentVoltageView"
+            app:layout_constraintRight_toLeftOf="@+id/bluetoothFragmentVoltageView"
+            app:layout_constraintTop_toTopOf="@+id/bluetoothFragmentVoltageView"
+            app:layout_constraintVertical_bias="0.0"
+            tools:backgroundTint="@android:color/holo_orange_dark" />
+
+        <TextView
+            android:id="@+id/bluetoothFragmentVoltageView"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/rounded_corner_edittext"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingEnd="3dp"
+            android:paddingStart="3dp"
+            android:text="voltage"
+            android:textColor="?android:attr/colorBackground"
+            android:textSize="12sp"
+            tools:backgroundTint="@android:color/holo_orange_dark"
+            tools:layout_editor_absoluteX="180dp"
+            tools:layout_editor_absoluteY="24dp" />
+
+
+        <ProgressBar
+            android:id="@+id/bluetoothFragmentConnectionProgress"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_conversion_absoluteX="0dp"
+            tools:layout_conversion_absoluteY="242dp"
+            tools:layout_conversion_absoluteWidth="84dp"
+            tools:layout_conversion_absoluteHeight="16dp"
+            app:layout_constraintRight_toLeftOf="@+id/bluetoothFragmentConnectionStateView"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/bluetoothFragmentConnectionStateView"
+            android:layout_marginTop="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/bluetoothFragmentConnectionStateView"
+            android:layout_marginBottom="0dp" />
+
+        <TextView
+            android:id="@+id/bluetoothFragmentConnectionStateView"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/rounded_corner_edittext"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingStart="3dp"
+            android:text="connection?"
+            android:textColor="?android:attr/colorBackground"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/bluetoothFragmentBluetoothStatusTextBox"
+            app:layout_constraintRight_toLeftOf="@+id/bluetoothFragmentBluetoothStatusTextBox"
+            app:layout_constraintTop_toTopOf="@+id/bluetoothFragmentBluetoothStatusTextBox"
+            tools:backgroundTint="@android:color/holo_orange_dark"
+            tools:layout_conversion_absoluteHeight="16dp"
+            tools:layout_conversion_absoluteWidth="143dp"
+            tools:layout_conversion_absoluteX="84dp"
+            tools:layout_conversion_absoluteY="257dp" />
+
+
+    </android.support.constraint.ConstraintLayout>
+    <!-- TODO: Update blank fragment layout -->
+
+</FrameLayout>
