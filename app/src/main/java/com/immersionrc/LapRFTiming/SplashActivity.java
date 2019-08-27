@@ -1,6 +1,14 @@
+// LapRF Timing App for Android systems
+//
+// Developed by Lemantech Labs, SARL for ImmersionRC Limited, HK
+//
+// Copyright 2019 ImmersionRC Limited
+//
+// For licensing, please refer to README.md
+//
 // Splash screen activity, displays a bitmap during app. load, and then switches to the original
 // launch activity
-// Anthony Cake: July 2017
+//
 
 package com.immersionrc.LapRFTiming;
 

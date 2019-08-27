@@ -1,3 +1,11 @@
+// LapRF Timing App for Android systems
+//
+// Developed by Lemantech Labs, SARL for ImmersionRC Limited, HK
+//
+// Copyright 2019 ImmersionRC Limited
+//
+// For licensing, please refer to README.md
+//
 // This class implements the view of bluetooth devices scanned by the background scanner
 // Background scanner transmits updates using 'intents', namely BROADCAST_DISCOVERED_DEVICE
 //

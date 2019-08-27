@@ -1,3 +1,11 @@
+// LapRF Timing App for Android systems
+//
+// Developed by Lemantech Labs, SARL for ImmersionRC Limited, HK
+//
+// Copyright 2019 ImmersionRC Limited
+//
+// For licensing, please refer to README.md
+//
 // Popup dialog responsible for determining frequency from a selected band and channel
 //
 //

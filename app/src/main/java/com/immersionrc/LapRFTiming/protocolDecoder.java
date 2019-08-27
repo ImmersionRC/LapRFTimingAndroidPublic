@@ -1,3 +1,11 @@
+// LapRF Timing App for Android systems
+//
+// Developed by Lemantech Labs, SARL for ImmersionRC Limited, HK
+//
+// Copyright 2019 ImmersionRC Limited
+//
+// For licensing, please refer to README.md
+//
 /**
  * Created by urssc on 1/24/2017.
  *
