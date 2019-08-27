@@ -227,8 +227,8 @@
 
     <TextView
         android:id="@+id/setupStatusTextBox"
-        android:layout_width="380dp"
-        android:layout_height="27dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@android:color/holo_orange_dark"
@@ -238,7 +238,7 @@
         android:linksClickable="false"
         android:longClickable="false"
         android:selectAllOnFocus="false"
-        android:text="LapRF Connection land"
+        android:text="LapRF Connection lhdpi"
         android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/racerRowListView"
         app:layout_constraintTop_toTopOf="parent" />

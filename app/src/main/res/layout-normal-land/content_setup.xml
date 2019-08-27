@@ -13,49 +13,30 @@
     tools:showIn="@layout/activity_setup">
 
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="0dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:text="@string/min_lap_time_title"
-        android:textSize="14sp"
-        app:layout_anchor="@+id/include"
-        app:layout_constraintBottom_toTopOf="@+id/spinnerMinLapTime"
-        app:layout_constraintLeft_toRightOf="@+id/racerRowListView" />
-
     <Button
         android:id="@+id/buttonRenamePuck"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="3dp"
-        android:elevation="0dp"
+        android:layout_marginBottom="2dp"
         android:maxLines="2"
         android:text="@string/button_rename_puck"
-        android:textSize="12sp"
+        android:textSize="8sp"
         app:layout_constraintBottom_toTopOf="@+id/sendButton"
+        app:layout_constraintStart_toStartOf="@+id/sendButton"
         tools:layout_conversion_absoluteHeight="48dp"
         tools:layout_conversion_absoluteWidth="176dp"
         tools:layout_conversion_absoluteX="16dp"
-        tools:layout_conversion_absoluteY="385dp"
-        app:layout_constraintLeft_toRightOf="@+id/checkBoxReadOk"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp" />
+        tools:layout_conversion_absoluteY="385dp" />
 
     <Button
         android:id="@+id/defaults25mWButton"
-        android:layout_width="50dp"
+        android:layout_width="78dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="-1dp"
         android:onClick="defaults25mWButton"
         android:text="@string/button_defaults_25mw"
-        android:textSize="12sp"
-        app:layout_constraintLeft_toRightOf="@+id/racerRowListView"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/racerRowListView"
         app:layout_constraintTop_toBottomOf="@+id/txPowerTextView"
         tools:layout_conversion_absoluteHeight="48dp"
         tools:layout_conversion_absoluteWidth="176dp"
@@ -64,15 +45,14 @@
 
     <Button
         android:id="@+id/defaults200mWButton"
-        android:layout_width="50dp"
+        android:layout_width="78dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         android:onClick="defaults200mWButton"
         android:text="@string/button_defaults_200mw"
-        android:textSize="12sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/defaults25mWButton"
-        app:layout_constraintLeft_toRightOf="@+id/defaults25mWButton"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/defaults25mWButton"
+        app:layout_constraintTop_toTopOf="@+id/defaults25mWButton"
         tools:layout_conversion_absoluteHeight="48dp"
         tools:layout_conversion_absoluteWidth="176dp"
         tools:layout_conversion_absoluteX="16dp"
@@ -80,105 +60,29 @@
 
     <Button
         android:id="@+id/defaults600mWButton"
-        android:layout_width="50dp"
+        android:layout_width="78dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
         android:onClick="defaults600mWButton"
         android:text="@string/button_defaults_600mw"
-        android:textSize="12sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/defaults200mWButton"
-        app:layout_constraintLeft_toRightOf="@+id/defaults200mWButton"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/defaults200mWButton"
+        app:layout_constraintTop_toTopOf="@+id/defaults25mWButton"
         tools:layout_conversion_absoluteHeight="48dp"
         tools:layout_conversion_absoluteWidth="176dp"
         tools:layout_conversion_absoluteX="16dp"
         tools:layout_conversion_absoluteY="385dp" />
 
-    <TextView
-        android:id="@+id/textViewMaxGateSpeed"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:lines="2"
-        android:maxLines="2"
-        android:text="Maximum Gate Speed"
-        app:layout_anchor="@+id/include"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toRightOf="@+id/racerRowListView"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/defaultsRaceBandButton" />
-
-    <TextView
-        android:id="@+id/txPowerTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:text="@string/title_tx_power"
-        app:layout_anchor="@+id/include"
-        app:layout_constraintLeft_toRightOf="@+id/racerRowListView"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="0dp" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="3dp"
-        android:text="@string/title_tx_channels"
-        app:layout_anchor="@+id/include"
-        app:layout_constraintLeft_toRightOf="@+id/racerRowListView"
-        app:layout_constraintTop_toBottomOf="@+id/defaults25mWButton" />
-
-    <TextView
-        android:id="@+id/setupStatusTextBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="0dp"
-        android:background="@android:color/holo_orange_dark"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        android:linksClickable="false"
-        android:longClickable="false"
-        android:selectAllOnFocus="false"
-        android:text="LapRF Connection"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/txPowerTextView"
-        android:layout_marginLeft="8dp" />
-
-
-    <Button
-        android:id="@+id/readButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:text="@string/button_read_settings"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/racerRowListView"
-        tools:layout_conversion_absoluteHeight="48dp"
-        tools:layout_conversion_absoluteWidth="176dp"
-        tools:layout_conversion_absoluteX="16dp"
-        tools:layout_conversion_absoluteY="385dp"
-        android:layout_marginBottom="0dp" />
-
     <Button
         android:id="@+id/defaultsRaceBandButton"
-        android:onClick="defaultsRaceBandButton"
-        android:layout_width="wrap_content"
+        android:layout_width="78dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
+        android:onClick="defaultsRaceBandButton"
         android:text="@string/buttons_default_raceband"
-        android:textSize="12sp"
-        app:layout_constraintLeft_toRightOf="@+id/racerRowListView"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/racerRowListView"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
         tools:layout_conversion_absoluteHeight="48dp"
         tools:layout_conversion_absoluteWidth="176dp"
         tools:layout_conversion_absoluteX="16dp"
@@ -186,72 +90,153 @@
 
     <Button
         android:id="@+id/defaultsIRCBandButton"
-        android:onClick="defaultsIRCBandButton"
-        android:layout_width="wrap_content"
+        android:layout_width="78dp"
         android:layout_height="wrap_content"
-        android:text="@string/buttons_default_ircband"
-        android:textSize="12sp"
+        android:layout_marginStart="8dp"
+        android:onClick="defaultsIRCBandButton"
+        android:text="@string/buttons_default_raceband"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/defaultsRaceBandButton"
+        app:layout_constraintTop_toTopOf="@+id/defaultsRaceBandButton"
         tools:layout_conversion_absoluteHeight="48dp"
         tools:layout_conversion_absoluteWidth="176dp"
         tools:layout_conversion_absoluteX="16dp"
         tools:layout_conversion_absoluteY="385dp"
-        tools:text="@string/buttons_default_ircband"
-        app:layout_constraintBaseline_toBaselineOf="@+id/defaultsRaceBandButton"
-        app:layout_constraintLeft_toRightOf="@+id/defaultsRaceBandButton"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp" />
+        tools:text="@string/buttons_default_ircband" />
+
+    <Button
+        android:id="@+id/readButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/button_read_settings"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxReadOk"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="176dp"
+        tools:layout_conversion_absoluteX="16dp"
+        tools:layout_conversion_absoluteY="385dp" />
+
 
     <Button
         android:id="@+id/sendButton"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:text="@string/button_write_settings"
-        android:textSize="12sp"
+        android:textSize="8sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         tools:layout_conversion_absoluteHeight="48dp"
         tools:layout_conversion_absoluteWidth="176dp"
         tools:layout_conversion_absoluteX="192dp"
         tools:layout_conversion_absoluteY="385dp"
-        app:layout_constraintLeft_toRightOf="@+id/checkBoxReadOk"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp" />
-
-
-    <ListView
-        android:id="@+id/racerRowListView"
-        android:layout_width="300dp"
-        android:layout_height="0dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_conversion_absoluteHeight="235dp"
-        tools:layout_conversion_absoluteWidth="352dp"
-        tools:layout_conversion_absoluteX="16dp"
-        tools:layout_conversion_absoluteY="67dp" />
+        tools:text="@string/button_write_settings" />
 
     <CheckBox
         android:id="@+id/checkBoxReadOk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:layout_marginEnd="6dp"
         android:checked="true"
-        app:layout_constraintLeft_toRightOf="@+id/readButton"
-        android:layout_marginLeft="4dp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginStart="4dp" />
+        app:layout_constraintEnd_toStartOf="@+id/sendButton" />
+
+    <ListView
+        android:id="@+id/racerRowListView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/readButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="235dp"
+        tools:layout_conversion_absoluteWidth="352dp"
+        tools:layout_conversion_absoluteX="16dp"
+        tools:layout_conversion_absoluteY="67dp" />
 
     <Spinner
         android:id="@+id/spinnerMinLapTime"
-        android:layout_width="111dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="0dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
         android:entries="@array/min_lap_time_array"
-        app:layout_constraintBottom_toTopOf="@+id/readButton"
-        app:layout_constraintLeft_toRightOf="@+id/racerRowListView" />
+        app:layout_constraintStart_toEndOf="@+id/racerRowListView"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/min_lap_time_title"
+        android:textSize="12sp"
+        app:layout_anchor="@+id/include"
+        app:layout_constraintStart_toEndOf="@+id/racerRowListView"
+        app:layout_constraintTop_toTopOf="@+id/buttonRenamePuck" />
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/title_tx_channels"
+        android:textSize="12sp"
+        app:layout_anchor="@+id/include"
+        app:layout_constraintStart_toEndOf="@+id/racerRowListView"
+        app:layout_constraintTop_toBottomOf="@+id/defaults25mWButton" />
+
+    <TextView
+        android:id="@+id/textViewMaxGateSpeed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="Maximum Gate Speed"
+        android:textSize="12sp"
+        app:layout_anchor="@+id/include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/racerRowListView"
+        app:layout_constraintTop_toBottomOf="@+id/defaultsRaceBandButton" />
+
+
+    <TextView
+        android:id="@+id/txPowerTextView"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/title_tx_power"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/racerRowListView"
+        app:layout_constraintTop_toBottomOf="@+id/setupStatusTextBox" />
+
+    <TextView
+        android:id="@+id/setupStatusTextBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_orange_dark"
+        android:editable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:linksClickable="false"
+        android:longClickable="false"
+        android:selectAllOnFocus="false"
+        android:text="LapRF Connection nr"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/racerRowListView"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>
