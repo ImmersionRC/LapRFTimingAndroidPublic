@@ -642,6 +642,10 @@ public class protocolDecoder
             txBuf.putFloat(data);
         }
     }
+
+    communicationRfSettings lastRFSettingsReceived;
+    boolean bReceivedRFSettings = false;
+
     //*********************************************************************************
     protocolStatus decodeReceivedPacket(  ) {
         long current_timestamp = time_us();
@@ -877,6 +881,13 @@ public class protocolDecoder
                 }
 
                 Log.d("protocolDecoder", "receive RF settings");
+
+                // ugly, but save the last settings received, and set a flag confirming their reception
+                // used by sendToDeviceWithVerification to confirm that settings were sent correctly
+                lastRFSettingsReceived = st;
+                bReceivedRFSettings = true;
+
+                // broadcast settings to interested parties
                 broadcastRFSettings(st);
             }
             else if (messageId == protocolMessageId.PROTOCOL_MESSAGE_ID_IRC_SETTINGS.val )

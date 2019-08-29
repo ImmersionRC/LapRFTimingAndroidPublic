@@ -8,6 +8,7 @@
 //
 package com.immersionrc.LapRFTiming;
 
+import android.app.ProgressDialog;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -15,6 +16,7 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
@@ -80,6 +82,8 @@ public class SetupActivity
 
     ArrayList<Integer> gainList;
     ArrayAdapter<Integer> gainAdapter;
+
+    boolean bReceivedRFSettings = false;
 
     // adapter to display settings for each slot of the LapRF
     //
@@ -507,7 +511,7 @@ public class SetupActivity
         {
             public void onClick(View v)
             {
-                sendToDevice();
+                sendToDeviceWithVerification();
 
             }
         } ) ;
@@ -844,6 +848,14 @@ public class SetupActivity
         float minLapTime = (spinnerIdx + 1 ) * 5;
 
         mService.sendMinLapTime(minLapTime);
+        try
+        {
+            Thread.sleep(20);
+        }
+        catch (Exception ex)
+        {
+            System.out.println("Sleep exception: " + ex);
+        }
 
         Vector<communicationRfSettings> settings = new Vector<communicationRfSettings>();
 
@@ -867,6 +879,97 @@ public class SetupActivity
         }
 
         mService.sendMultiChannelSettings (settings);
+
+    }
+
+    //----------------------------------------------------------------------------------------------------------------------------------------------
+    //  version of sendToDevice which verifies that each setting was sent correctly to the device by reading it back.
+    //
+    // NOTE: This is a bit of an ugly workaround for the problem sending settings on some devices, but seems to work well.
+    // the root cause does need to be identified.
+    void sendToDeviceWithVerification()
+    {
+        try
+        {
+            CheckBox resolutionAndSpeedText = (CheckBox) findViewById(R.id.checkBoxReadOk);
+            resolutionAndSpeedText.setChecked(false);
+
+            Log.d("SetupActivity", "sendToDevice");
+
+            Spinner spinnerMinLapTime = (Spinner) findViewById(R.id.spinnerMinLapTime);
+            int spinnerIdx = spinnerMinLapTime.getSelectedItemPosition();
+            float minLapTime = (spinnerIdx + 1 ) * 5;
+
+            mService.sendMinLapTime(minLapTime);
+
+            Vector<communicationRfSettings> settings = new Vector<communicationRfSettings>();
+
+            // send settings for each slot separately
+            for (int i = 0; i < numSlots; i++)
+            {
+                short nTotalFailed = 0;
+                communicationRfSettings set = slotsettingsadapter.getItem(i);
+
+                // disable list entry while sending
+                slotsettingsadapter.setActive(set.slotid, false);
+
+                boolean bWrittenAndVerified = false;
+                while(!bWrittenAndVerified)
+                {
+                    // send the setting for this slot
+                    mService.decode.bReceivedRFSettings = false;
+                    mService.sendChannelSettings(set.slotid, set.enable == 1 ? true : false, set.band, set.channel, set.gain, set.threshold, set.frequency);
+
+                    // wait for confirmation that we received the echo back
+                    for (int nRetries = 0; nRetries < 10; ++nRetries)
+                    {
+                        if (mService.decode.bReceivedRFSettings == true)
+                            break;
+                        Thread.sleep(20);
+
+                    }
+
+                    // ensure that the settings are as we sent them (note that channel and band are less important than frequency, do to the fact
+                    // that arbitrary frequencies may be sent, which don't correspond to a particular channel.
+                    if (mService.decode.bReceivedRFSettings == true &&
+                        mService.decode.lastRFSettingsReceived.slotid == set.slotid &&
+                        mService.decode.lastRFSettingsReceived.frequency == set.frequency &&
+                        mService.decode.lastRFSettingsReceived.gain == set.gain)
+                    {
+                        System.out.println("bReceivedRFSettings == true");
+
+                        bWrittenAndVerified = true;
+                    }
+                    else
+                    {
+                        // if we time out waiting for settings to be echoed back, wait a bit, and go around again. If the total failure count
+                        // is way larger than expected, inform the user and stop trying
+                        System.out.println("bReceivedRFSettings == false");
+                        Thread.sleep(200);          // time to recover (maybe)
+
+                        if(++nTotalFailed > 10)
+                        {
+                            new AlertDialog.Builder(this)
+                                    .setTitle("LapRF")
+                                    .setMessage("Settings write FAILED")
+                                    .setPositiveButton("OK", null)
+                                    .show();
+                            return;
+                        }
+                    }
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            System.out.println("Sleep exception: " + ex);
+        }
+
+        new AlertDialog.Builder(this)
+                .setTitle("LapRF")
+                .setMessage("Settings write OK")
+                .setPositiveButton("OK", null)
+                .show();
 
     }
 
@@ -953,6 +1056,8 @@ public class SetupActivity
         slotsettingsadapter.setActive(rf_settings.slotid, true);
 
         slotsettingsadapter.updateRequest();
+
+        bReceivedRFSettings = true;
     }
 
     public void receivedSettings(extraSettings extra_settings)
